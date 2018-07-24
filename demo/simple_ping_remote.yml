@@ -1,0 +1,8 @@
+---
+- name: Run on remote host
+  hosts: simple
+  tasks:
+    - name: ping to remote
+      ping:
+
+    

@@ -1,0 +1,11 @@
+---
+- name: Run on remote host
+  hosts: kali-cluster
+  become: yes # New!
+  tasks:
+    - name: update cluster
+      apt:
+        update_cache: yes
+        upgrade: yes
+
+    
